@@ -1,9 +1,15 @@
 package cast.clazz;
 
-/**
- * Created by Mikalai_Churakou on 4/19/2016.
- */
-public class B extends A {
+class A {
+
+    public A(){
+
+        System.out.println("Constructor A");
+    }
+
+}
+
+class B extends A {
     public B(){
         System.out.println("Constructor B");
     }
@@ -12,6 +18,5 @@ public class B extends A {
         A a = new B();
         B b = (B)new A();
     }
-
 
 }
